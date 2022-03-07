@@ -1,20 +1,32 @@
 <template>
-  <div class="card" style="width: 18rem">
-    <img
-      class="card-img-top"
-      src="https://www.kfc.co.th/Content/OnlineOrderingImages/Menu/Items/lg2x/7Free7Y22.png"
-      alt="Card image cap"
-    />
-    <div class="card-body">
-      <h5 class="card-title">7 ฟรี 7</h5>
-      <p class="card-text">
-        ไก่ทอด 7 ชิ้น
-      </p>
-      <a href="#" class="btn btn-primary">จาก ฿315.00</a>
-    </div>
-  </div>
+  <b-col md="6">
+    <b-card>
+      <b-row no-gutters>
+        <b-col md="6">
+          <b-card-img alt="Image"> {{ image }} </b-card-img>
+        </b-col>
+        <b-col md="6">
+          <b-card-body>
+              <h5> {{title}} </h5>
+            <b-card-text>
+              {{ content }}
+            </b-card-text>
+            <b-button href="#" variant="danger">Go somewhere</b-button>
+          </b-card-body>
+        </b-col>
+      </b-row>
+    </b-card>
+  </b-col>
 </template>
 
 <style>
-
+h5 {
+    color: #e4002b;
+}
 </style>
+
+<script>
+export default {
+  props: ["title", "content", "image"],
+};
+</script>

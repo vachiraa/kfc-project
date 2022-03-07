@@ -9,7 +9,7 @@
       background="#ababab"
       img-width="1024"
       img-height="480"
-      style="text-shadow: 1px 1px 2px #333"
+      style="text-shadow: 1px 1px 2px #333;"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
     >
@@ -17,40 +17,34 @@
       <b-carousel-slide
         img-src="https://www.kfc.co.th/Content/OnlineOrderingImages/Menu/Category/Carousel/wearyourway_TH.jpg"
       ></b-carousel-slide>
-      <b-carousel-slide
-        img-src="https://www.kfc.co.th/Content/OnlineOrderingImages/Menu/Category/Carousel/Tender_ALC_DLV_TH.jpg"
-      ></b-carousel-slide>
-      <b-carousel-slide
-        img-src="https://www.kfc.co.th/Content/OnlineOrderingImages/Menu/Category/Carousel/ORTender_Party_Gang_TH.jpg"
-      ></b-carousel-slide>
-      <b-carousel-slide
-        img-src="https://www.kfc.co.th/Content/OnlineOrderingImages/Menu/Category/Carousel/7FREE7_TH.jpg"
-      ></b-carousel-slide>
-      <b-carousel-slide
-        img-src="https://www.kfc.co.th/Content/OnlineOrderingImages/Menu/Category/Carousel/BuddySnackBanner_TH.jpg"
-      ></b-carousel-slide>
-      <b-carousel-slide
-        img-src="https://www.kfc.co.th/Content/OnlineOrderingImages/Menu/Category/Carousel/BigOrder_Banner_DLV_TH.jpg"
-      ></b-carousel-slide>
+
+      <!-- Slides with custom text -->
+      <b-carousel-slide img-src="https://www.kfc.co.th/Content/OnlineOrderingImages/Menu/Category/Carousel/Tender_ALC_DLV_TH.jpg"></b-carousel-slide>
+      <b-carousel-slide img-src="https://www.kfc.co.th/Content/OnlineOrderingImages/Menu/Category/Carousel/ORTender_Party_Gang_TH.jpg"></b-carousel-slide>
+      <b-carousel-slide img-src="https://www.kfc.co.th/Content/OnlineOrderingImages/Menu/Category/Carousel/7FREE7_TH.jpg"></b-carousel-slide>
+      <b-carousel-slide img-src="https://www.kfc.co.th/Content/OnlineOrderingImages/Menu/Category/Carousel/BuddySnackBanner_TH.jpg"></b-carousel-slide>
+      <b-carousel-slide img-src="https://www.kfc.co.th/Content/OnlineOrderingImages/Menu/Category/Carousel/BigOrder_Banner_DLV_TH.jpg"></b-carousel-slide>
+
+
     </b-carousel>
   </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      slide: 0,
-      sliding: null,
-    };
-  },
-  methods: {
-    onSlideStart(slide) {
-      this.sliding = true;
+  export default {
+    data() {
+      return {
+        slide: 0,
+        sliding: null
+      }
     },
-    onSlideEnd(slide) {
-      this.sliding = false;
-    },
-  },
-};
+    methods: {
+      onSlideStart(slide) {
+        this.sliding = true
+      },
+      onSlideEnd(slide) {
+        this.sliding = false
+      }
+    }
+  }
 </script>
