@@ -1,17 +1,17 @@
 <template>
   <b-col md="6">
-    <b-card>
+    <b-card no-body class="overflow-hidden" style="max-width: 100%; max-high: 100%">
       <b-row no-gutters>
-        <b-col md="6">
-          <b-card-img alt="Image"> {{ image }} </b-card-img>
+        <b-col md="5">
+          <b-card-img :src=image alt="Image" ></b-card-img>
         </b-col>
-        <b-col md="6">
+        <b-col md="7">
           <b-card-body>
               <h5> {{title}} </h5>
             <b-card-text>
               {{ content }}
             </b-card-text>
-            <b-button href="#" variant="danger">Go somewhere</b-button>
+            <b-button href="#" variant="danger">{{price}}</b-button>
           </b-card-body>
         </b-col>
       </b-row>
@@ -27,6 +27,6 @@ h5 {
 
 <script>
 export default {
-  props: ["title", "content", "image"],
+  props: ["title", "content","image","price"],
 };
 </script>
