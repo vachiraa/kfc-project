@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid>
+  <b-container fluid class="bg-white">
     <Header />
     <b-row>
       <h1>ชุดสุดคุ้ม</h1>

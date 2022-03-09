@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="light" variant="fade">
+    <b-navbar class="bg-white" toggleable="lg" type="light" variant="fade">
       <b-navbar-brand href="#"
         ><img
           src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/4215606/133185_278332.jpeg"
@@ -17,15 +17,16 @@
           </b-nav-item>
 
           <b-nav-item right > promotion code </b-nav-item>
-          <b-nav-item> เข้าสู่ระบบ </b-nav-item>
 
           <b-nav-item-dropdown text="ภาษา" right>
             <b-dropdown-item href="#">TH</b-dropdown-item>
             <b-dropdown-item href="#">EN</b-dropdown-item>
           </b-nav-item-dropdown>
+          
+          <b-nav-item> เข้าสู่ระบบ </b-nav-item>
 
           <b-nav-item>
-            <b-icon icon="bell-fill" class="p-2 bg-danger"></b-icon>
+            <b-icon icon="bell-fill" font-scale="1"></b-icon>
           </b-nav-item>
 
         </b-navbar-nav>
@@ -33,7 +34,7 @@
     </b-navbar>
 
     <!-- second navbar -->
-    <b-navbar type="light" variant="fade">
+    <b-navbar class="bg-white" type="light" variant="fade">
       <b-navbar-nav >
         <b-nav-item href="#">โปรโมชั่น</b-nav-item>
         <b-nav-item href="#">ชุดสุดคุ้ม</b-nav-item>
