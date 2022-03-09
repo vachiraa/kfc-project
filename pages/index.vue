@@ -1,6 +1,9 @@
 <template>
   <b-container fluid>
     <Header />
+    <b-row>
+      <h1>ชุดสุดคุ้ม</h1>
+      </b-row>
     <b-row class="py-2">
       <PostContent
         title="7 ฟรี 7"
@@ -23,7 +26,7 @@
       <PostContent
         title="เดอะบอกซ์ไก่ทอดเนื้อล้วนสูตรผู้พัน"
         content="ไก่ทอดเนื้อล้วนสูตรผู้พัน 2 ชิ้นพร้อมซอสสูตรพิเศษ ไก่ทอด 1 ชิ้น ไก่วิงซ์แซ่บ 2 ชิ้น เฟรนช์ฟรายส์ ปกติ 1 ที่ เป๊ปซี่ 1ที่"
-        image="https://www.kfc.co.th/Content/OnlineOrderingImages/Menu/Items/lg2x/PT_Tender.png"
+        image="https://www.kfc.co.th/Content/OnlineOrderingImages/Menu/Items/lg2x/TB_Tender_DLV.png"
         price="จาก ฿159.00"
       />
       <PostContent
@@ -99,12 +102,14 @@
 <script>
 import Header from "@/components/Header";
 import PostContent from "@/components/PostContent";
+import Footer from "@/components/Footer";
 
 export default {
   layout: "default",
   components: {
     Header,
     PostContent,
+    Footer,
   },
 };
 </script>
@@ -112,5 +117,8 @@ export default {
 <style>
 html {
   align-content: center;
+}
+h1 {
+  margin: 2rem;
 }
 </style>
