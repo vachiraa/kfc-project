@@ -8,7 +8,7 @@
 
 <style>
 html{
-  width: 80%;
+  max-width: 80%;
   display: block;
   margin: auto;
 }

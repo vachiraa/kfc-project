@@ -11,31 +11,29 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-
           <b-nav-item>
             <b-form-checkbox switch></b-form-checkbox>
           </b-nav-item>
 
-          <b-nav-item right > promotion code </b-nav-item>
+          <b-nav-item right> promotion code </b-nav-item>
 
           <b-nav-item-dropdown text="ภาษา" right>
             <b-dropdown-item href="#">TH</b-dropdown-item>
             <b-dropdown-item href="#">EN</b-dropdown-item>
           </b-nav-item-dropdown>
-          
+
           <b-nav-item> เข้าสู่ระบบ </b-nav-item>
 
           <b-nav-item>
             <b-icon icon="bell-fill" font-scale="1"></b-icon>
           </b-nav-item>
-
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
 
     <!-- second navbar -->
     <b-navbar class="bg-white" type="light" variant="fade">
-      <b-navbar-nav >
+      <b-navbar-nav>
         <b-nav-item href="#">โปรโมชั่น</b-nav-item>
         <b-nav-item href="#">ชุดสุดคุ้ม</b-nav-item>
         <b-nav-item href="#">เมนูเพิ่มเติม</b-nav-item>
@@ -44,10 +42,12 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-
-          <b-nav-item right> <b-button style="background-color: #e4002b;">เริ่มสั่งอาหาร</b-button> </b-nav-item>
+          <b-nav-item right>
+            <b-button style="background-color: #e4002b"
+              >เริ่มสั่งอาหาร</b-button
+            >
+          </b-nav-item>
           <b-nav-item> ฿0.00 </b-nav-item>
-
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -58,7 +58,6 @@
 img {
   width: 80px;
   height: 80px;
-  
 }
 </style>
 
