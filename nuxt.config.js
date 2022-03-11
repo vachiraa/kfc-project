@@ -48,9 +48,9 @@ export default {
   bootstrapVue: {
     icons: true
   },
-  
+
   generate: {
     dir: 'my-site'
-  }
+  },
 
 }
